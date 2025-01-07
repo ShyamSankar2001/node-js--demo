@@ -20,5 +20,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: shyamrifle/app:latest
+          tags: shyamrifle/nodejs-demo:latest
           file: ./Dockerfile
