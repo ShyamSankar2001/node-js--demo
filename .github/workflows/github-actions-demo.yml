@@ -20,9 +20,8 @@ jobs:
 
       - name: list
         run: 
-          pwd
           ls -ls
-          
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
