@@ -19,6 +19,12 @@ jobs:
       
       - name: docker login
         run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: docker build
+        run: docker build -t shyamrifle/nodejs-demo:1.0
+
+      - name: docker push
+        run: docker build -t shyamrifle/nodejs-demo:1.0
       
           
     
