@@ -18,12 +18,9 @@ jobs:
 
       - name: list
         run: ls
+
+      - name: docker build
+        run: docker build -t shyamrifle/nodejs-demo:1.0
           
 
-      - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: ./Dockerfile  
-          push: true
-          tags: shyamrifle/nodejs-demo:latest
+      
