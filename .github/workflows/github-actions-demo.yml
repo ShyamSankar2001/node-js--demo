@@ -20,7 +20,7 @@ jobs:
         run: ls
 
       - name: docker build
-        run: docker build -t shyamrifle/nodejs-demo:1.0
+        run: docker build -t shyamrifle/nodejs-demo:1.0 .
           
 
       
