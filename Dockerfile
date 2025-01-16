@@ -13,8 +13,6 @@ RUN npm install
 # Copy the rest of the application code into the container
 COPY . .
 
-# Build the application (if applicable)
-RUN npm run build  # Only needed if you are transpiling, bundling, etc.
 
 # Stage 2: Final Stage (Runtime Image)
 FROM node:22-alpine AS runtime
